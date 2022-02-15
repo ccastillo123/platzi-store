@@ -9,6 +9,14 @@ git: # número de versiones (git) a guardar
         depth: 3
 script: #script a ejecutar
         - yarn build
+notifications:
+  email:
+    reciepients:
+    - cristhiancastillo132@hotmail.com
+    - ccastillov@arepa.dev
+    on_success: always
+    on_failure: always
+# manda emails a esos mails cuando es exitoso y cuando falla
 deploy:
         provider: pages #github pages
 # configuración del deploy:
